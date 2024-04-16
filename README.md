@@ -1,1 +1,1 @@
-# Exercícios sobre Strings e Arrays em C++
+# Exercícios Strings e Arrays em C++
