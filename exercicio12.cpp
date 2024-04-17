@@ -11,6 +11,7 @@ int verificaVogais(string frase, int vogais, int len){
     for(int i = 0; i < len; i++){
         if(frase[i] == 'A' || frase[i] == 'a' || frase[i] == 'E' || frase[i] == 'e' || frase[i] == 'I' || frase[i] == 'i' || frase[i] == 'O' || frase[i] == 'o' || frase[i] == 'U' || frase[i] == 'u'){
             vogais++;
+            cout << vogais << " " << i << " " << frase[i] << endl;
         }
     }
     return vogais;
@@ -22,7 +23,9 @@ int main(){
     int len = sizeof(frase) / sizeof(frase[0]);
    
     cout << "Entre com uma frase: ";
+    cin.ignore();
     getline(cin, frase);
+    cin.ignore();
     
     vogais = verificaVogais(frase, vogais, len);
 
