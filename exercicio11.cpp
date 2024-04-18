@@ -15,11 +15,11 @@ int main(){
     cin >> palavra2;
 
     if(palavra1.compare(palavra2) == 0){
-        cout << "As Strings são iguais." << endl;
+        cout << "As Strings sao iguais." << endl;
     } else if(palavra1.compare(palavra2) < 0){
-        cout << "A primeira String é menor em ordem alfabetica." << endl;
+        cout << "A primeira String eh menor em ordem alfabetica." << endl;
     } else if(palavra1.compare(palavra2) > 0){
-        cout << "A primeira String é maior em ordem alfabetica." << endl;
+        cout << "A primeira String eh maior em ordem alfabetica." << endl;
     } else {
         cout << "Erro!" << endl;
         return -1;
