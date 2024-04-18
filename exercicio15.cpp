@@ -15,7 +15,7 @@ int main(){
 
     cout << "Insira uma pequena frase: ";
     getline(cin, frase);
-    len = frase.size(); // funcao size para pegar o tamanho de uma String
+    len = frase.size(); // funcao size para pegar o tamanho de uma String, sizeoff só funciona na string se seu tamanho estiver especificado ([])
     
     for(int i = 0; i < len; i++){
         for(int j = 0; j < lenV; j++){

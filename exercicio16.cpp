@@ -6,25 +6,31 @@
 
 using namespace std;
 
-void lerDados(){
-    cout << nomes << endl;
-
+void lerDados(string *nomes, int *idades, int lenVetor){
+    cout << "Preencha os dados no formato 'Nome,Idade'" << endl;
+    for(int i = 0; i < lenVetor; i++){
+        cout << "ID " << i << ": ";
+        getline(cin, nomes[i], ',');
+        cin >> idades[i];
+        cin.ignore();
+    }
 }
 
-void imprimeDados(){
-
-
-
+void imprimeDados(string *nomes, int *idades, int lenVetor){
+    cout << endl;
+    cout << "Exibindo dados armazenados..." << endl;
+    for(int i = 0; i < lenVetor; i++){
+        cout << "ID " << i << " - " << nomes[i] << " - " << idades[i] << " anos" << endl;
+    }
 }
 
 int main(){
-    string nomes[1];
-    int idades[1];
-    int lenNomes = sizeof(nomes) / sizeof(nomes[0]);
-    int lenIdades = sizeof(idades) / sizeof(idades[0]);
+    string nomes[10];
+    int idades[10];
+    int lenVetor = sizeof(nomes) / sizeof(nomes[0]);
 
-    lerDados();
-    imprimeDados();
+    lerDados(nomes, idades, lenVetor);
+    imprimeDados(nomes, idades, lenVetor);
 
     return 0;
 }
