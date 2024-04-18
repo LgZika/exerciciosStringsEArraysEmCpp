@@ -20,7 +20,7 @@ int verificaVogais(string frase, char vogais[], int numeroVogais, int lenFrase, 
 }
 
 int main(){
-    string frase = {""};
+    string frase;
     char vogais[] = {'A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u'};
     int numeroVogais = 0;
     
@@ -28,7 +28,7 @@ int main(){
    
     cout << "Entre com uma frase: "; // input de usuario
     getline(cin, frase);
-    int lenFrase = sizeof(frase) / sizeof(frase[0]);
+    int lenFrase = frase.size();
     
     numeroVogais = verificaVogais(frase, vogais, numeroVogais, lenFrase, lenVogais); // funcao que retorna o numero de vogais
 

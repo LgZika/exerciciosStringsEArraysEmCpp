@@ -8,11 +8,11 @@
 using namespace std;
 
 int main(){
-    string dias[7];
-    int len = sizeof(dias) /sizeof(dias[0]);
-    int indice;
-
-    cout << "Preencha o Array com od dias da semana:" << endl;
+    string dias[7]; 
+    int len = sizeof(dias) /sizeof(dias[0]); // esse macete dos sizeoff só funciona se o array (vetor) de string tiver seu tamanho especificado KKKKK,                                
+    int indice;                              // se não retorna o tamanho do ponteiro que aponta para o buffer da string.
+    cout << len << endl;
+    cout << "Preencha o Array com os dias da semana:" << endl;
     for(int i =0; i < len; i++){
         cout << "Posicao "<< i << ": "; 
         cin >> dias[i];
